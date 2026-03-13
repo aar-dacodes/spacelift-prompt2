@@ -1,5 +1,9 @@
 package spacelift
 
+import future.keywords.in
+import future.keywords.if
+import future.keywords.contains
+
 # Identificar cambios reales en recursos aws_iam_policy
 iam_policy_changes contains resource if {
     some resource in input.terraform.resource_changes
